@@ -1,0 +1,6 @@
+- name: Update test
+  hosts: all
+  become: true
+  tasks:
+    - name: Update APT Package
+      apt: update=yes
