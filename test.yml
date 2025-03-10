@@ -3,4 +3,4 @@
   become: true
   tasks:
     - name: Update APT Package
-      apt: update=yes
+      apt-get: update=yes
