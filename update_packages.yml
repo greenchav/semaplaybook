@@ -1,9 +1,9 @@
 name: Update Proxmox
-      hosts: all
-      become: yes
-      tasks:
-    name: Update packages
-            apt:
-              update_cache: yes
-              upgrade: dist-upgrade
-              autoremove: yes
+hosts: all
+become: yes
+tasks:
+      name: Update packages
+      apt:
+      update_cache: yes
+      upgrade: dist-upgrade
+      autoremove: yes
