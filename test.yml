@@ -4,3 +4,4 @@
   tasks:
     - name: Update APT Package & Upgrade
       apt: update_cache=yes
+      apt: dist_upgrade=yes
