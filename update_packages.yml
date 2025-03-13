@@ -1,9 +1,0 @@
-- name: Update Packages
-hosts: all
-become: yes
-tasks:
-      - name: Update packages
-      apt:
-      update_cache: yes
-      upgrade: dist-upgrade
-      autoremove: yes
