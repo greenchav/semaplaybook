@@ -1,6 +1,6 @@
-- name: Update test
+- name: Update Packages
   hosts: all
   become: true
   tasks:
-    - name: Update APT Package
+    - name: Update APT Package & Upgrade
       apt: update_cache=yes
