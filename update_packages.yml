@@ -1,4 +1,5 @@
 name: Update Proxmox
+      hosts: all
       become: yes
       tasks:
     name: Update packages
