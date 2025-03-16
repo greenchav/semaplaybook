@@ -3,7 +3,6 @@
   become: true
   become_method: sudo
   become_exe: /usr/bin/sudo
-  gather_facts: false
   tasks:
     - name: Update package cache
       apt:
