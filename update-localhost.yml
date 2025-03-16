@@ -1,6 +1,6 @@
 - hosts: localhost
   become: true
-  become_method: su ansible
+  become_method: sudo
   connection: local
   gather_facts: false
   tasks:
