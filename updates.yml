@@ -1,7 +1,7 @@
-- name: Update all host/vm packages
-  hosts: all  
-  ansible.builtin.apt:
-  update_cache: true
-  cache_valid_time: 3600
-  name: "*"
-  state: latest
+- name: Update Packages
+  hosts: all
+  become: true
+  tasks:
+    - name: Update APT Package & Upgrade
+      apt: update_cache=yes
+      apt: upgrade=dist
