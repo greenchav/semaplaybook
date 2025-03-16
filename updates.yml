@@ -16,4 +16,5 @@
 
     - name: Reboot if required
       reboot:
+      msg: "Reboot initiated by Ansible due to system updates"
       when: reboot_required_file.stat.exists == true
