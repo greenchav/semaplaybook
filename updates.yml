@@ -1,3 +1,9 @@
-- name: Update package cache
-  ansible.builtin.package:
-    update_cache: true
+- hosts: all
+  tasks:
+    - name: Update package cache
+      apt:
+        update_cache: yes
+        
+    - name: Upgrade all packages
+      apt:
+        upgrade: dist
