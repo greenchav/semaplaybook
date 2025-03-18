@@ -1,5 +1,4 @@
 - hosts: localhost
-  connection: local
   become: false
   tasks:
     - name: Update package cache
