@@ -1,6 +1,6 @@
 - hosts: all
   become: true
-  interpreter_python: auto_silent
+  interpreter_python=auto_silent
   tasks:
     - name: Update package cache
       apt:
