@@ -1,8 +1,6 @@
 - hosts: localhost
   connection: local
   become: true
-  become_method: sudo
-  become_exe: /usr/bin/sudo
   tasks:
     - name: Update package cache
       apt:
