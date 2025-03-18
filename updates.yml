@@ -1,6 +1,6 @@
 - hosts: all
   become: true
-  interpreter_python=auto_silent
+  ansible_python_interpreter: /usr/bin/python3.11
   tasks:
     - name: Update package cache
       apt:
