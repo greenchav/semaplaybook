@@ -12,7 +12,6 @@
       register: reboot_required_file
       stat:
         path: /var/run/reboot-required
-      register: reboot_required_file
     - name: Reboot if needed
       reboot:
         msg: "Rebooting host with ansible..."
