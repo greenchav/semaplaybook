@@ -1,6 +1,7 @@
 - hosts: all
   become: true
   tasks:
+      ansible_interpreter_python: auto_silent
     - name: Update package cache
       apt:
         update_cache: yes
